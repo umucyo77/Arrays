@@ -152,3 +152,24 @@ console.log("The Descending order:",descending);
 let data = [42, 10, 500, 2, 77];
 data.reverse();
 console.log("The Data reversed:",data);
+
+// Exercise 8: Concatenation, Joining, and Slicing
+
+let arr1 = ["A", "B"]
+let arr2 = ["C", "D"]
+let sentenceParts = ["Hello", "world", "this", "is", "great"];
+
+// a
+
+let newArray=arr1.concat(arr2);
+console.log("The new array is:",newArray);
+
+// b
+
+let newSentenceParts=sentenceParts.join(" ");
+console.log("The New sentence parts Joined: ",newSentenceParts);
+
+// c
+
+let newSlice= sentenceParts.slice(1,4);
+console.log("The New Word Sliced is :",newSlice);

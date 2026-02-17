@@ -1,5 +1,22 @@
-let productCategories = ["Books","Pen","Phone","Cable","chargers"];
 
+//Exercise1: array initialization and property Access
 
+const productCategories = ["Books","Electronics","Clothing","Home & Kitchen","Toys & Games"];
+
+// a
 console.log(productCategories[0]);
-console.log(productCategories[])
+//b
+console.log(productCategories[productCategories.length-1]);
+
+//c
+
+console.log(productCategories.length);
+
+//d
+
+productCategories[1]= "Pen";
+
+//e 
+
+console.log(productCategories);
+

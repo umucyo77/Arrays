@@ -1,5 +1,7 @@
 //Section A: Basic Manipulation (Syntax & Mutators)
 
+
+
 // Exercise 1: array initialization and property Access
 
 const productCategories = ["Books","Electronics","Clothing","Home & Kitchen","Toys & Games"];
@@ -101,6 +103,8 @@ const  products = [
      {id: 3, name: "Keyboard", price: 75}
     ];
 
+   
+
 //a
 
 let foundProduct = products.find(product => product.id === 2);
@@ -109,3 +113,23 @@ console.log(foundProduct);
 // b
 let foundprice=products.findIndex(product=>product.price>1000);
 console.log(foundprice);
+
+
+// Exercise 6: Checking Array Integrity (some, every)
+
+const userAges = [18, 24, 33, 16, 40];
+
+// a
+let underAge=userAges.some(userAge=>userAge<18);
+console.log(underAge);
+
+// b
+
+underAge=userAges.every(userAge=>userAge>=18);
+console.log(underAge);
+
+//c
+
+under=userAges.some(underAge => underAge %5 ===0);
+console.log(under);
+

@@ -1,3 +1,4 @@
+//Section A: Basic Manipulation (Syntax & Mutators)
 
 // Exercise 1: array initialization and property Access
 
@@ -72,3 +73,22 @@ spreadCopy[2]=50;
 console.log("The Original Scores:",originalScores);
 console.log("The Spread Copy:",spreadCopy);
 
+
+//Section B: Searching & Checking (Accessors & Iterators)
+
+//Exercise 4: Finding Elements by Value and Index
+
+//a
+// The indexOf , lastIndexOf= if the condition is true
+const studentNames = ["Alice", "Bob", "Charlie", "Alice", "David"];
+console.log(studentNames.indexOf("Alice"));
+
+// b
+console.log(studentNames.lastIndexOf("Alice"));
+
+// c
+console.log(studentNames.includes("Charlie"));
+
+// d
+
+console.log(studentNames.includes("Eve"));

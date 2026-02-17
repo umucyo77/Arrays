@@ -173,3 +173,15 @@ console.log("The New sentence parts Joined: ",newSentenceParts);
 
 let newSlice= sentenceParts.slice(1,4);
 console.log("The New Word Sliced is :",newSlice);
+
+// Exercise 9: Flattening Arrays (flat)
+
+let nestedList = [1, [2, 3], [4, [5, 6]]];
+
+// a
+
+console.log("The new Flatted nested Array",nestedList.flat());
+
+// b
+
+console.log("The Infinity Flatted Arrayis:",nestedList.flat(Infinity));

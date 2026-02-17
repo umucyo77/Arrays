@@ -133,3 +133,22 @@ console.log(underAge);
 under=userAges.some(underAge => underAge %5 ===0);
 console.log(under);
 
+// Section C: Transformation & Reordering
+
+// Exercise 7: Sorting and Reversing
+
+const dataPoints = [42, 10, 500, 2, 77];
+
+//a
+let ascending =dataPoints.sort((a, b) =>a - b)
+console.log("The Ascending Order:",ascending);
+
+// b
+
+let descending = dataPoints.sort((a,b) => b-a);
+console.log("The Descending order:",descending);
+
+// c
+let data = [42, 10, 500, 2, 77];
+data.reverse();
+console.log("The Data reversed:",data);

@@ -185,3 +185,18 @@ console.log("The new Flatted nested Array",nestedList.flat());
 // b
 
 console.log("The Infinity Flatted Arrayis:",nestedList.flat(Infinity));
+
+// Section D: Functional Programming (Higher-Order Methods)
+
+// Exercise 10: Mapping Data (map)
+
+const pricesUSD = [10.50, 20.00, 5.25];
+const exchangeRate = 1.3;
+
+// a
+const pricesLocal = pricesUSD.map(price => price * exchangeRate);
+console.log("Prices in local currency:", pricesLocal);
+
+// b
+const formattedPrices = pricesUSD.map(price => `Item price: $${(price * exchangeRate).toFixed(2)}`);
+console.log("Formatted prices:", formattedPrices);

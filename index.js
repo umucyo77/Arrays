@@ -214,3 +214,19 @@ const average = testScores.reduce((sum, score) => sum + score, 0) / testScores.l
 const belowAverageScores = testScores.filter(score => score < average);
 console.log("Average:", average);
 console.log("Below average scores:", belowAverageScores);
+
+// Exercise 12: Aggregating Data (reduce)
+
+//  pricesUSD = [10.50, 20.00, 5.25];
+
+// a - Calculate total cost
+const totalCost = pricesUSD.reduce((sum, price) => sum + price, 0);
+console.log("Total cost:", totalCost);
+
+// b - Find maximum price
+const maxPrice = pricesUSD.reduce((max, price) => price > max ? price : max);
+console.log("Maximum price:", maxPrice);
+
+// Challenge - Count prices greater than $15
+const countAbove15 = pricesUSD.reduce((count, price) => price > 15 ? count + 1 : count, 0);
+console.log("Prices greater than $15:", countAbove15);

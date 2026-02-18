@@ -230,3 +230,22 @@ console.log("Maximum price:", maxPrice);
 // Challenge - Count prices greater than $15
 const countAbove15 = pricesUSD.reduce((count, price) => price > 15 ? count + 1 : count, 0);
 console.log("Prices greater than $15:", countAbove15);
+
+// Section E: Objects Inside Arrays (Real-World Data Structures)
+// Exercise 13: Sorting Objects
+
+const users = [{name: "Zoe", age: 30}, {name: "Adam", age: 25}, {name: "Charlie", age: 30}];
+
+// a - Sort by age ascending
+const sortedByAge = users.sort((a, b) => a.age - b.age);
+console.log("Sorted by age:", sortedByAge);
+
+// b - Sort by age, then by name
+const sortedByAgeAndName = users.sort((a, b) => {
+    if (a.age !== b.age) {
+        return a.age - b.age;
+    }
+    return a.name.localeCompare(b.name);
+});
+console.log("Sorted by age and name:", sortedByAgeAndName);
+

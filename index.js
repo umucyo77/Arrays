@@ -294,3 +294,21 @@ for (let row = 0; row < gameBoard.length; row++) {
     }
 }
 console.log("Sum of all elements:", sum);
+
+// Section G: Mini Projects
+
+// Project 1: Student Result System
+
+const students = [{name: "A", score: 85}, {name: "B", score: 45}, {name: "C", score: 92}, {name: "D", score: 68}];
+
+// Filter students with score >= 70
+const passed = students.filter(student => student.score >= 70);
+console.log("Passed students:", passed);
+
+// Calculate average score
+const averageScore = students.reduce((sum, student) => sum + student.score, 0) / students.length;
+console.log("Average score:", averageScore);
+
+// Find top scorer
+const topScorer = students.reduce((max, student) => student.score > max.score ? student : max);
+console.log("Top scorer:", topScorer);

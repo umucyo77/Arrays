@@ -249,3 +249,12 @@ const sortedByAgeAndName = users.sort((a, b) => {
 });
 console.log("Sorted by age and name:", sortedByAgeAndName);
 
+// Exercise 14: Mapping and Filtering Objects
+
+// a - Map to extract only names
+const userNames = users.map(user => user.name);
+console.log("User names:", userNames);
+
+// b - Filter users older than 28
+const usersOver28 = users.filter(user => user.age > 28);
+console.log("Users older than 28:", usersOver28);

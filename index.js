@@ -258,3 +258,20 @@ console.log("User names:", userNames);
 // b - Filter users older than 28
 const usersOver28 = users.filter(user => user.age > 28);
 console.log("Users older than 28:", usersOver28);
+
+// Section F: Multi-Dimensional Arrays (Matrices)
+// Exercise 15: Creating and Accessing a Matrix
+
+// a - Create a 3x3 matrix initialized with zeros
+const gameBoard = [
+    [0, 0, 0],
+    [0, 0, 0],
+    [0, 0, 0]
+];
+
+// b - Set the center position (row 1, column 1) to 1
+gameBoard[1][1] = 1;
+
+// c - Access and print the top-right corner (row 0, column 2)
+console.log("Top-right corner value:", gameBoard[0][2]);
+console.log("Game board:", gameBoard);

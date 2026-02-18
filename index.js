@@ -275,3 +275,22 @@ gameBoard[1][1] = 1;
 // c - Access and print the top-right corner (row 0, column 2)
 console.log("Top-right corner value:", gameBoard[0][2]);
 console.log("Game board:", gameBoard);
+
+// Exercise 16: Looping Through a Matrix
+
+// a - Print every value in the matrix using nested for loops
+console.log("Matrix values:");
+for (let row = 0; row < gameBoard.length; row++) {
+    for (let col = 0; col < gameBoard[row].length; col++) {
+        console.log(`gameBoard[${row}][${col}] = ${gameBoard[row][col]}`);
+    }
+}
+
+// b - Calculate and print the sum of all elements
+let sum = 0;
+for (let row = 0; row < gameBoard.length; row++) {
+    for (let col = 0; col < gameBoard[row].length; col++) {
+        sum += gameBoard[row][col];
+    }
+}
+console.log("Sum of all elements:", sum);

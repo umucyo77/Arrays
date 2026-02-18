@@ -200,3 +200,17 @@ console.log("Prices in local currency:", pricesLocal);
 // b
 const formattedPrices = pricesUSD.map(price => `Item price: $${(price * exchangeRate).toFixed(2)}`);
 console.log("Formatted prices:", formattedPrices);
+
+// Exercise 11: Filtering Data (filter)
+
+const testScores = [45, 78, 92, 30, 65, 88];
+
+// a
+const passingScores = testScores.filter(score => score >= 70);
+console.log("Passing scores:", passingScores);
+
+// b
+const average = testScores.reduce((sum, score) => sum + score, 0) / testScores.length;
+const belowAverageScores = testScores.filter(score => score < average);
+console.log("Average:", average);
+console.log("Below average scores:", belowAverageScores);
